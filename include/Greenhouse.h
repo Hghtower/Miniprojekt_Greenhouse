@@ -4,7 +4,6 @@
 class Greenhouse {
 private:
     int waterLevel;
-    int remainWater;
     float fertilizerlevel;
     bool light;
     

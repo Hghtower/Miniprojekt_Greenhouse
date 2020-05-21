@@ -1,5 +1,5 @@
 #include <Greenhouse.h>
 
-void refillWater(int waterLevel, int remainWater) {
-    waterLevel = 180 - remainWater;
+void refillWater(int waterLevel) {
+    waterLevel = 180;
 }
