@@ -1,0 +1,3 @@
+C:/Users/andre_000/Documents/VSC projects/Miniprojekt-Greenhouse/build/CMakeFiles/edit_cache.dir
+C:/Users/andre_000/Documents/VSC projects/Miniprojekt-Greenhouse/build/CMakeFiles/Main.dir
+C:/Users/andre_000/Documents/VSC projects/Miniprojekt-Greenhouse/build/CMakeFiles/rebuild_cache.dir

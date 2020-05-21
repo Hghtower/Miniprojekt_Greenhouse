@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Users/andre_000/Documents/VSC projects/Miniprojekt-Greenhouse/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/Main.dir/includes_CXX.rsp -g   -o CMakeFiles\\Main.dir\\src\\Main.cpp.obj -c \"C:\\Users\\andre_000\\Documents\\VSC projects\\Miniprojekt-Greenhouse\\src\\Main.cpp\"",
+  "file": "C:/Users/andre_000/Documents/VSC projects/Miniprojekt-Greenhouse/src/Main.cpp"
+}
+]

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Greenhouse.h
+iostream
+-
+
+C:/Users/andre_000/Documents/VSC projects/Miniprojekt-Greenhouse/src/Main.cpp
+Greenhouse.h
+-
+iostream
+-
+
