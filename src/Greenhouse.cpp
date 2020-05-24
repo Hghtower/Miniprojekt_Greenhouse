@@ -1,5 +1,13 @@
 #include <Greenhouse.h>
 
-void refillWater(int waterLevel) {
-    waterLevel = 180;
+void Greenhouse::refillWater() {
+    water_level = 180;
 }
+
+void Greenhouse::refillFertilizer() {
+    fertilizer_level = 10;
+}
+
+void Greenhouse::lightOn() {
+    light = true;
+};

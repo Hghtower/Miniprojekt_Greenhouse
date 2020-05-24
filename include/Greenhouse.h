@@ -1,14 +1,13 @@
 #pragma once
-#include <iostream>
 
 class Greenhouse {
-private:
-    int waterLevel;
-    float fertilizerlevel;
+public:
+    int water_level;
+    float fertilizer_level;
     bool light;
     
-public:
     void refillWater();
-    int getWater();
+    void refillFertilizer();
     float getFertilizerlevel();
+    void lightOn();
 };

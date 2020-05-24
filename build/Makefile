@@ -142,6 +142,60 @@ Main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/build
 .PHONY : Main/fast
 
+src/CucumberPlant.obj: src/CucumberPlant.cpp.obj
+
+.PHONY : src/CucumberPlant.obj
+
+# target to build an object file
+src/CucumberPlant.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/CucumberPlant.cpp.obj
+.PHONY : src/CucumberPlant.cpp.obj
+
+src/CucumberPlant.i: src/CucumberPlant.cpp.i
+
+.PHONY : src/CucumberPlant.i
+
+# target to preprocess a source file
+src/CucumberPlant.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/CucumberPlant.cpp.i
+.PHONY : src/CucumberPlant.cpp.i
+
+src/CucumberPlant.s: src/CucumberPlant.cpp.s
+
+.PHONY : src/CucumberPlant.s
+
+# target to generate assembly for a file
+src/CucumberPlant.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/CucumberPlant.cpp.s
+.PHONY : src/CucumberPlant.cpp.s
+
+src/Greenhouse.obj: src/Greenhouse.cpp.obj
+
+.PHONY : src/Greenhouse.obj
+
+# target to build an object file
+src/Greenhouse.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/Greenhouse.cpp.obj
+.PHONY : src/Greenhouse.cpp.obj
+
+src/Greenhouse.i: src/Greenhouse.cpp.i
+
+.PHONY : src/Greenhouse.i
+
+# target to preprocess a source file
+src/Greenhouse.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/Greenhouse.cpp.i
+.PHONY : src/Greenhouse.cpp.i
+
+src/Greenhouse.s: src/Greenhouse.cpp.s
+
+.PHONY : src/Greenhouse.s
+
+# target to generate assembly for a file
+src/Greenhouse.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/Greenhouse.cpp.s
+.PHONY : src/Greenhouse.cpp.s
+
 src/Main.obj: src/Main.cpp.obj
 
 .PHONY : src/Main.obj
@@ -169,6 +223,60 @@ src/Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
+src/Plants.obj: src/Plants.cpp.obj
+
+.PHONY : src/Plants.obj
+
+# target to build an object file
+src/Plants.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/Plants.cpp.obj
+.PHONY : src/Plants.cpp.obj
+
+src/Plants.i: src/Plants.cpp.i
+
+.PHONY : src/Plants.i
+
+# target to preprocess a source file
+src/Plants.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/Plants.cpp.i
+.PHONY : src/Plants.cpp.i
+
+src/Plants.s: src/Plants.cpp.s
+
+.PHONY : src/Plants.s
+
+# target to generate assembly for a file
+src/Plants.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/Plants.cpp.s
+.PHONY : src/Plants.cpp.s
+
+src/TomatoPlant.obj: src/TomatoPlant.cpp.obj
+
+.PHONY : src/TomatoPlant.obj
+
+# target to build an object file
+src/TomatoPlant.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/TomatoPlant.cpp.obj
+.PHONY : src/TomatoPlant.cpp.obj
+
+src/TomatoPlant.i: src/TomatoPlant.cpp.i
+
+.PHONY : src/TomatoPlant.i
+
+# target to preprocess a source file
+src/TomatoPlant.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/TomatoPlant.cpp.i
+.PHONY : src/TomatoPlant.cpp.i
+
+src/TomatoPlant.s: src/TomatoPlant.cpp.s
+
+.PHONY : src/TomatoPlant.s
+
+# target to generate assembly for a file
+src/TomatoPlant.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/TomatoPlant.cpp.s
+.PHONY : src/TomatoPlant.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -178,9 +286,21 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Main
+	@echo ... src/CucumberPlant.obj
+	@echo ... src/CucumberPlant.i
+	@echo ... src/CucumberPlant.s
+	@echo ... src/Greenhouse.obj
+	@echo ... src/Greenhouse.i
+	@echo ... src/Greenhouse.s
 	@echo ... src/Main.obj
 	@echo ... src/Main.i
 	@echo ... src/Main.s
+	@echo ... src/Plants.obj
+	@echo ... src/Plants.i
+	@echo ... src/Plants.s
+	@echo ... src/TomatoPlant.obj
+	@echo ... src/TomatoPlant.i
+	@echo ... src/TomatoPlant.s
 .PHONY : help
 
 

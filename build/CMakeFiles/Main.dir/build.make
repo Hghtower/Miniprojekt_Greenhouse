@@ -90,19 +90,83 @@ CMakeFiles/Main.dir/src/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Main.dir/src/Main.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\src\Main.cpp" -o CMakeFiles\Main.dir\src\Main.cpp.s
 
+CMakeFiles/Main.dir/src/Greenhouse.cpp.obj: CMakeFiles/Main.dir/flags.make
+CMakeFiles/Main.dir/src/Greenhouse.cpp.obj: CMakeFiles/Main.dir/includes_CXX.rsp
+CMakeFiles/Main.dir/src/Greenhouse.cpp.obj: ../src/Greenhouse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Main.dir/src/Greenhouse.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Main.dir\src\Greenhouse.cpp.obj -c "C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\src\Greenhouse.cpp"
+
+CMakeFiles/Main.dir/src/Greenhouse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Main.dir/src/Greenhouse.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\src\Greenhouse.cpp" > CMakeFiles\Main.dir\src\Greenhouse.cpp.i
+
+CMakeFiles/Main.dir/src/Greenhouse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Main.dir/src/Greenhouse.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\src\Greenhouse.cpp" -o CMakeFiles\Main.dir\src\Greenhouse.cpp.s
+
+CMakeFiles/Main.dir/src/Plants.cpp.obj: CMakeFiles/Main.dir/flags.make
+CMakeFiles/Main.dir/src/Plants.cpp.obj: CMakeFiles/Main.dir/includes_CXX.rsp
+CMakeFiles/Main.dir/src/Plants.cpp.obj: ../src/Plants.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Main.dir/src/Plants.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Main.dir\src\Plants.cpp.obj -c "C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\src\Plants.cpp"
+
+CMakeFiles/Main.dir/src/Plants.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Main.dir/src/Plants.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\src\Plants.cpp" > CMakeFiles\Main.dir\src\Plants.cpp.i
+
+CMakeFiles/Main.dir/src/Plants.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Main.dir/src/Plants.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\src\Plants.cpp" -o CMakeFiles\Main.dir\src\Plants.cpp.s
+
+CMakeFiles/Main.dir/src/TomatoPlant.cpp.obj: CMakeFiles/Main.dir/flags.make
+CMakeFiles/Main.dir/src/TomatoPlant.cpp.obj: CMakeFiles/Main.dir/includes_CXX.rsp
+CMakeFiles/Main.dir/src/TomatoPlant.cpp.obj: ../src/TomatoPlant.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Main.dir/src/TomatoPlant.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Main.dir\src\TomatoPlant.cpp.obj -c "C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\src\TomatoPlant.cpp"
+
+CMakeFiles/Main.dir/src/TomatoPlant.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Main.dir/src/TomatoPlant.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\src\TomatoPlant.cpp" > CMakeFiles\Main.dir\src\TomatoPlant.cpp.i
+
+CMakeFiles/Main.dir/src/TomatoPlant.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Main.dir/src/TomatoPlant.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\src\TomatoPlant.cpp" -o CMakeFiles\Main.dir\src\TomatoPlant.cpp.s
+
+CMakeFiles/Main.dir/src/CucumberPlant.cpp.obj: CMakeFiles/Main.dir/flags.make
+CMakeFiles/Main.dir/src/CucumberPlant.cpp.obj: CMakeFiles/Main.dir/includes_CXX.rsp
+CMakeFiles/Main.dir/src/CucumberPlant.cpp.obj: ../src/CucumberPlant.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Main.dir/src/CucumberPlant.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Main.dir\src\CucumberPlant.cpp.obj -c "C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\src\CucumberPlant.cpp"
+
+CMakeFiles/Main.dir/src/CucumberPlant.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Main.dir/src/CucumberPlant.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\src\CucumberPlant.cpp" > CMakeFiles\Main.dir\src\CucumberPlant.cpp.i
+
+CMakeFiles/Main.dir/src/CucumberPlant.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Main.dir/src/CucumberPlant.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\src\CucumberPlant.cpp" -o CMakeFiles\Main.dir\src\CucumberPlant.cpp.s
+
 # Object files for target Main
 Main_OBJECTS = \
-"CMakeFiles/Main.dir/src/Main.cpp.obj"
+"CMakeFiles/Main.dir/src/Main.cpp.obj" \
+"CMakeFiles/Main.dir/src/Greenhouse.cpp.obj" \
+"CMakeFiles/Main.dir/src/Plants.cpp.obj" \
+"CMakeFiles/Main.dir/src/TomatoPlant.cpp.obj" \
+"CMakeFiles/Main.dir/src/CucumberPlant.cpp.obj"
 
 # External object files for target Main
 Main_EXTERNAL_OBJECTS =
 
 Main.exe: CMakeFiles/Main.dir/src/Main.cpp.obj
+Main.exe: CMakeFiles/Main.dir/src/Greenhouse.cpp.obj
+Main.exe: CMakeFiles/Main.dir/src/Plants.cpp.obj
+Main.exe: CMakeFiles/Main.dir/src/TomatoPlant.cpp.obj
+Main.exe: CMakeFiles/Main.dir/src/CucumberPlant.cpp.obj
 Main.exe: CMakeFiles/Main.dir/build.make
 Main.exe: CMakeFiles/Main.dir/linklibs.rsp
 Main.exe: CMakeFiles/Main.dir/objects1.rsp
 Main.exe: CMakeFiles/Main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Main.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\andre_000\Documents\VSC projects\Miniprojekt-Greenhouse\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Main.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
