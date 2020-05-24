@@ -18,25 +18,27 @@ void simulateTime(std::vector<TomatoPlant> &ThePlants);
 int main (int argc, char const *argv[]) {
     std::cout << "Greenhouse simulation starting..." << '\n';
 
+    //Set random dims
     srand(time(NULL));
 
+    //Refill tank
     Storage.refillWater(); 
     Storage.refillFertilizer();
     Storage.lightOn();
 
     //Input plants
-    TomatoPlant tom1;
-    TomatoPlant tom2;
-    TomatoPlant tomatoman;
+    TomatoPlant tomato1;
+    TomatoPlant tomato2;
+    TomatoPlant tomato3;
 
     //Input number of days to simulate
     std::cout << "Input number of days to simulate: " << '\n';
     std::cin >> days;
 
     //Create plant objects
-    ThePlants.push_back(tom1);
-    ThePlants.push_back(tom2);
-    ThePlants.push_back(tomatoman);
+    ThePlants.push_back(tomato1);
+    ThePlants.push_back(tomato2);
+    ThePlants.push_back(tomato3);
 
     //Simulate
     simulateTime(ThePlants);
@@ -67,8 +69,8 @@ bool growFruit(std::vector<TomatoPlant> &ThePlants) {
                 std::cout << "Tomatoplant " << i << " grew a tomato!!! It now has a total of " << ThePlants[i].num_fruits << " tomatoes" << '\n';
             }
         }
-        Storage.water_level = Storage.water_level - ThePlants[i].water_usage;
-        Storage.fertilizer_level = Storage.fertilizer_level - ThePlants[i].fertilizer_usage;
+        Storage.water_level -= ThePlants[i].water_usage;
+        Storage.fertilizer_level -= ThePlants[i].fertilizer_usage;
         if (Storage.water_level < ThePlants[i].water_usage) {
             std::cout << "There is not enough water in the tank to grow tomatoes!!!" << '\n';
             return false;
