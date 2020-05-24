@@ -34,15 +34,12 @@ int main (int argc, char const *argv[]) {
     std::cin >> days;
 
     //Create plant objects
-    /*std::vector<Plants*> ThePlants;*/
     ThePlants.push_back(tom1);
     ThePlants.push_back(tom2);
     ThePlants.push_back(tomatoman);
 
     //Simulate
     simulateTime(ThePlants);
-    
-    //Print results
 
     return 0;
 }
@@ -77,13 +74,4 @@ void growFruit(std::vector<TomatoPlant> &ThePlants) {
             std::cout << "There is not enough fertlizer in the tank to grow tomatoes!!!" << '\n';
         }
     }
-    
-/*
-    if ((Storage.water_level >= ThePlants[].water_usage) && (Storage.fertilizer_level >= y.fertilizer_usage) && (Storage.light)) {
-        int Chance = rand() % 100 + 1;
-        if(Chance <= 20) {
-            y.num_fruits++;
-        }
-    }
-*/
 }
