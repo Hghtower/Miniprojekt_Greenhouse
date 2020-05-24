@@ -10,10 +10,10 @@
 
 int days = 0;
 Greenhouse Storage;
-std::vector<Plants*> ThePlants;
+std::vector<TomatoPlant> ThePlants;
 
-void growFruit(std::vector<Plants*> &ThePlants);
-void simulateTime(std::vector<Plants*> &ThePlants);
+void growFruit(std::vector<TomatoPlant> &ThePlants);
+void simulateTime(std::vector<TomatoPlant> &ThePlants);
 
 int main (int argc, char const *argv[]) {
     std::cout << "Greenhouse simulation starting..." << '\n';
@@ -27,7 +27,7 @@ int main (int argc, char const *argv[]) {
     //Input plants
     TomatoPlant tom1;
     TomatoPlant tom2;
-    CucumberPlant cuc1;
+    TomatoPlant tomatoman;
 
     //Input number of days to simulate
     std::cout << "Input number of days to simulate: " << '\n';
@@ -35,32 +35,46 @@ int main (int argc, char const *argv[]) {
 
     //Create plant objects
     /*std::vector<Plants*> ThePlants;*/
-    ThePlants.push_back(new TomatoPlant);
-    ThePlants.push_back(new TomatoPlant);
-    ThePlants.push_back(new CucumberPlant);
+    ThePlants.push_back(tom1);
+    ThePlants.push_back(tom2);
+    ThePlants.push_back(tomatoman);
 
     //Simulate
     simulateTime(ThePlants);
-
+    
     //Print results
 
     return 0;
 }
 
-void simulateTime(std::vector<Plants*> &ThePlants ) {
+void simulateTime(std::vector<TomatoPlant> &ThePlants ) {
     for (int i = 0; i < days; i++) {
+        std::cout << "Day " << i + 1 << " of " << days << '\n';
         growFruit(ThePlants);
+    }
+    std::cout << days << " have elapsed. The total number of tomatoes on the plants are: " << '\n';
+    for (auto i : ThePlants) {
+        std::cout << i.num_fruits << " tomatoes" << '\n';
     }
 }
 
-void growFruit(std::vector<Plants*> &ThePlants) {
+void growFruit(std::vector<TomatoPlant> &ThePlants) {
     for (int i = 0; i < ThePlants.size(); i++)
     {
-        if (Storage.light) {
+        if ((Storage.water_level >= ThePlants[i].water_usage) && (Storage.fertilizer_level >= ThePlants[i].fertilizer_usage) && (Storage.light)) {
             int Chance = rand() % 100 + 1;
-            if(Chance <= 100) {
-                std::cout << ThePlants[i]->water_usage << '\n';
+            if ((Chance <= 20) && (ThePlants[i].num_fruits < ThePlants[i].max_fruit)) {
+                ThePlants[i].num_fruits++;
+                std::cout << "Tomatoplant " << i << " grew a tomato!!! It now has a total of " << ThePlants[i].num_fruits << " tomatoes" << '\n';
             }
+        }
+        Storage.water_level = Storage.water_level - ThePlants[i].water_usage;
+        Storage.fertilizer_level = Storage.fertilizer_level - ThePlants[i].fertilizer_usage;
+        if (Storage.water_level < ThePlants[i].water_usage) {
+            std::cout << "There is not enough water in the tank to grow tomatoes!!!" << '\n';
+        }
+        if (Storage.fertilizer_level < ThePlants[i].fertilizer_usage) {
+            std::cout << "There is not enough fertlizer in the tank to grow tomatoes!!!" << '\n';
         }
     }
     
