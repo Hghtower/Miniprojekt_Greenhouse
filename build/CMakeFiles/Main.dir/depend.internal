@@ -5,7 +5,6 @@ CMakeFiles/Main.dir/src/CucumberPlant.cpp.obj
  ../include/CucumberPlant.h
  ../include/Greenhouse.h
  ../include/Plants.h
- ../include/TomatoPlant.h
  C:/Users/andre_000/Documents/VSC projects/Miniprojekt-Greenhouse/src/CucumberPlant.cpp
 CMakeFiles/Main.dir/src/Greenhouse.cpp.obj
  ../include/Greenhouse.h
@@ -17,13 +16,10 @@ CMakeFiles/Main.dir/src/Main.cpp.obj
  ../include/TomatoPlant.h
  C:/Users/andre_000/Documents/VSC projects/Miniprojekt-Greenhouse/src/Main.cpp
 CMakeFiles/Main.dir/src/Plants.cpp.obj
- ../include/CucumberPlant.h
  ../include/Greenhouse.h
  ../include/Plants.h
- ../include/TomatoPlant.h
  C:/Users/andre_000/Documents/VSC projects/Miniprojekt-Greenhouse/src/Plants.cpp
 CMakeFiles/Main.dir/src/TomatoPlant.cpp.obj
- ../include/CucumberPlant.h
  ../include/Greenhouse.h
  ../include/Plants.h
  ../include/TomatoPlant.h

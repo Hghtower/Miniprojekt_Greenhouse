@@ -10,4 +10,4 @@ void Greenhouse::refillFertilizer() {
 
 void Greenhouse::lightOn() {
     light = true;
-};
+}

@@ -15,10 +15,6 @@ Plants.h
 ../include/Plants.h
 Greenhouse.h
 -
-TomatoPlant.h
--
-CucumberPlant.h
--
 
 ../include/TomatoPlant.h
 Plants.h

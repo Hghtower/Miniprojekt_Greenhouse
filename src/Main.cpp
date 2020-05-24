@@ -8,18 +8,18 @@
 #include <time.h>
 #include <stdlib.h>
 
-int days = 30; //temp
+int days = 0;
+Greenhouse Storage;
+std::vector<Plants*> ThePlants;
 
-void growFruit();
-
-void simulateTime();
+void growFruit(std::vector<Plants*> &ThePlants);
+void simulateTime(std::vector<Plants*> &ThePlants);
 
 int main (int argc, char const *argv[]) {
     std::cout << "Greenhouse simulation starting..." << '\n';
 
     srand(time(NULL));
 
-    Greenhouse Storage;
     Storage.refillWater(); 
     Storage.refillFertilizer();
     Storage.lightOn();
@@ -34,30 +34,42 @@ int main (int argc, char const *argv[]) {
     std::cin >> days;
 
     //Create plant objects
-    std::vector<Plants*> ThePlants;
-    ThePlants.push_back(&tom1);
-    ThePlants.push_back(&tom2);
-    ThePlants.push_back(&cuc1);
+    /*std::vector<Plants*> ThePlants;*/
+    ThePlants.push_back(new TomatoPlant);
+    ThePlants.push_back(new TomatoPlant);
+    ThePlants.push_back(new CucumberPlant);
 
     //Simulate
-    simulateTime();
+    simulateTime(ThePlants);
 
     //Print results
 
     return 0;
 }
 
-void simulateTime(Greenhouse &t, Plants* &y) {
-    for (int i = days; i == 0; i--) {
-        growFruit();
-    };
+void simulateTime(std::vector<Plants*> &ThePlants ) {
+    for (int i = 0; i < days; i++) {
+        growFruit(ThePlants);
+    }
 }
 
-void growFruit(Greenhouse &t, Plants* &y) {
-    if ((t.water_level >= y.water_usage) && (t.fertilizer_level >= y.fertilizer_usage) && (t.light)) {
+void growFruit(std::vector<Plants*> &ThePlants) {
+    for (int i = 0; i < ThePlants.size(); i++)
+    {
+        if (Storage.light) {
+            int Chance = rand() % 100 + 1;
+            if(Chance <= 100) {
+                std::cout << ThePlants[i]->water_usage << '\n';
+            }
+        }
+    }
+    
+/*
+    if ((Storage.water_level >= ThePlants[].water_usage) && (Storage.fertilizer_level >= y.fertilizer_usage) && (Storage.light)) {
         int Chance = rand() % 100 + 1;
         if(Chance <= 20) {
             y.num_fruits++;
-        };
-    };
+        }
+    }
+*/
 }
