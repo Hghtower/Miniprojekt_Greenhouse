@@ -10,6 +10,10 @@
 
 int days = 30; //temp
 
+void growFruit();
+
+void simulateTime();
+
 int main (int argc, char const *argv[]) {
     std::cout << "Greenhouse simulation starting..." << '\n';
 
@@ -45,9 +49,9 @@ int main (int argc, char const *argv[]) {
 
 void simulateTime(Greenhouse &t, Plants* &y) {
     for (int i = days; i == 0; i--) {
-        growFruit(Greenhouse &t, Plants* &y);
+        growFruit();
     };
-};
+}
 
 void growFruit(Greenhouse &t, Plants* &y) {
     if ((t.water_level >= y.water_usage) && (t.fertilizer_level >= y.fertilizer_usage) && (t.light)) {
@@ -56,4 +60,4 @@ void growFruit(Greenhouse &t, Plants* &y) {
             y.num_fruits++;
         };
     };
-};
+}
