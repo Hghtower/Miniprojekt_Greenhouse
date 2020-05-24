@@ -12,7 +12,7 @@ int days = 0;
 Greenhouse Storage;
 std::vector<TomatoPlant> ThePlants;
 
-void growFruit(std::vector<TomatoPlant> &ThePlants);
+bool growFruit(std::vector<TomatoPlant> &ThePlants);
 void simulateTime(std::vector<TomatoPlant> &ThePlants);
 
 int main (int argc, char const *argv[]) {
@@ -47,15 +47,17 @@ int main (int argc, char const *argv[]) {
 void simulateTime(std::vector<TomatoPlant> &ThePlants ) {
     for (int i = 0; i < days; i++) {
         std::cout << "Day " << i + 1 << " of " << days << '\n';
-        growFruit(ThePlants);
+        if (!growFruit(ThePlants)) {
+            break;
+        }
     }
-    std::cout << days << " have elapsed. The total number of tomatoes on the plants are: " << '\n';
+    std::cout << days << " days have elapsed. The total number of tomatoes on the plants are: " << '\n';
     for (auto i : ThePlants) {
         std::cout << i.num_fruits << " tomatoes" << '\n';
     }
 }
 
-void growFruit(std::vector<TomatoPlant> &ThePlants) {
+bool growFruit(std::vector<TomatoPlant> &ThePlants) {
     for (int i = 0; i < ThePlants.size(); i++)
     {
         if ((Storage.water_level >= ThePlants[i].water_usage) && (Storage.fertilizer_level >= ThePlants[i].fertilizer_usage) && (Storage.light)) {
@@ -69,9 +71,12 @@ void growFruit(std::vector<TomatoPlant> &ThePlants) {
         Storage.fertilizer_level = Storage.fertilizer_level - ThePlants[i].fertilizer_usage;
         if (Storage.water_level < ThePlants[i].water_usage) {
             std::cout << "There is not enough water in the tank to grow tomatoes!!!" << '\n';
+            return false;
         }
         if (Storage.fertilizer_level < ThePlants[i].fertilizer_usage) {
             std::cout << "There is not enough fertlizer in the tank to grow tomatoes!!!" << '\n';
+            return false;
         }
     }
+    return true;
 }
