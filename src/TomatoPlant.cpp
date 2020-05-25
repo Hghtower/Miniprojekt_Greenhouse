@@ -1,10 +1,11 @@
+#include <Plants.h>
+#include <Greenhouse.h>
 #include <TomatoPlant.h>
 
-void TomatoPlant::growFruit() {
-    if (num_fruits < max_fruit) {
-        num_fruits++;
-    }
-}
+
+
+
+
 int TomatoPlant::getNumFruit() {
     return num_fruits;
 }

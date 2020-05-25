@@ -7,4 +7,6 @@ include_directories(include)
 set(SOURCE Main.cpp)
 
 add_executable(Main src/Main.cpp 
-                    src/Greenhouse.cpp)
+                    src/Greenhouse.cpp
+                    src/TomatoPlant.cpp
+                    src/Plant.cpp)

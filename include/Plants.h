@@ -1,7 +1,9 @@
 #pragma once
-#include <Greenhouse.h>
 
 class Plants {
-protected:
+ protected:
     int num_fruits = 0;
+
+ public:
+ void growFruit();
 };
