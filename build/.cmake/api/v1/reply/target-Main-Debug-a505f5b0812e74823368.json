@@ -61,8 +61,7 @@
 				0,
 				1,
 				2,
-				3,
-				4
+				3
 			]
 		}
 	],
@@ -102,8 +101,7 @@
 				0,
 				1,
 				2,
-				3,
-				4
+				3
 			]
 		}
 	],
@@ -131,12 +129,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/TomatoPlant.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/CucumberPlant.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

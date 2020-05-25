@@ -9,5 +9,4 @@ set(SOURCE Main.cpp)
 add_executable(Main src/Main.cpp 
                     src/Greenhouse.cpp
                     src/Plants.cpp
-                    src/TomatoPlant.cpp
-                    src/CucumberPlant.cpp)
+                    src/TomatoPlant.cpp)

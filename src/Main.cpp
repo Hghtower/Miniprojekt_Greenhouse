@@ -1,10 +1,9 @@
 #include <Greenhouse.h>
 #include <Plants.h>
 #include <TomatoPlant.h>
-#include <CucumberPlant.h>
 #include <iostream>
 #include <vector>
-#include <chrono>
+#include <Windows.h>
 #include <time.h>
 #include <stdlib.h>
 
@@ -18,7 +17,7 @@ void simulateTime(std::vector<TomatoPlant> &ThePlants);
 int main (int argc, char const *argv[]) {
     std::cout << "Greenhouse simulation starting..." << '\n';
 
-    //Set random dims
+    //Set random 
     srand(time(NULL));
 
     //Refill tank
@@ -47,14 +46,17 @@ int main (int argc, char const *argv[]) {
 }
 
 void simulateTime(std::vector<TomatoPlant> &ThePlants ) {
+    int elapsed_days = 0;
     for (int i = 0; i < days; i++) {
         std::cout << "Day " << i + 1 << " of " << days << '\n';
+        elapsed_days++;
         if (!growFruit(ThePlants)) {
             break;
         }
     }
-    std::cout << days << " days have elapsed. The total number of tomatoes on the plants are: " << '\n';
+    std::cout << elapsed_days << " days have elapsed. The total number of tomatoes on the plants are: " << '\n';
     for (auto i : ThePlants) {
+        Sleep(100);
         std::cout << i.num_fruits << " tomatoes" << '\n';
     }
 }
@@ -62,21 +64,22 @@ void simulateTime(std::vector<TomatoPlant> &ThePlants ) {
 bool growFruit(std::vector<TomatoPlant> &ThePlants) {
     for (int i = 0; i < ThePlants.size(); i++)
     {
+        Sleep(300);
         if ((Storage.water_level >= ThePlants[i].water_usage) && (Storage.fertilizer_level >= ThePlants[i].fertilizer_usage) && (Storage.light)) {
             int Chance = rand() % 100 + 1;
             if ((Chance <= 20) && (ThePlants[i].num_fruits < ThePlants[i].max_fruit)) {
                 ThePlants[i].num_fruits++;
-                std::cout << "Tomatoplant " << i << " grew a tomato!!! It now has a total of " << ThePlants[i].num_fruits << " tomatoes" << '\n';
+                std::cout << "Tomato plant " << i + 1 << " grew a tomato! It now has a total of " << ThePlants[i].num_fruits << " tomatoes" << '\n';
             }
         }
         Storage.water_level -= ThePlants[i].water_usage;
         Storage.fertilizer_level -= ThePlants[i].fertilizer_usage;
         if (Storage.water_level < ThePlants[i].water_usage) {
-            std::cout << "There is not enough water in the tank to grow tomatoes!!!" << '\n';
+            std::cout << "There is not enough water in the tank to grow tomatoes!" << '\n';
             return false;
         }
         if (Storage.fertilizer_level < ThePlants[i].fertilizer_usage) {
-            std::cout << "There is not enough fertlizer in the tank to grow tomatoes!!!" << '\n';
+            std::cout << "There is not enough fertlizer in the tank to grow tomatoes!" << '\n';
             return false;
         }
     }

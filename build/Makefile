@@ -142,33 +142,6 @@ Main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/build
 .PHONY : Main/fast
 
-src/CucumberPlant.obj: src/CucumberPlant.cpp.obj
-
-.PHONY : src/CucumberPlant.obj
-
-# target to build an object file
-src/CucumberPlant.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/CucumberPlant.cpp.obj
-.PHONY : src/CucumberPlant.cpp.obj
-
-src/CucumberPlant.i: src/CucumberPlant.cpp.i
-
-.PHONY : src/CucumberPlant.i
-
-# target to preprocess a source file
-src/CucumberPlant.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/CucumberPlant.cpp.i
-.PHONY : src/CucumberPlant.cpp.i
-
-src/CucumberPlant.s: src/CucumberPlant.cpp.s
-
-.PHONY : src/CucumberPlant.s
-
-# target to generate assembly for a file
-src/CucumberPlant.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/CucumberPlant.cpp.s
-.PHONY : src/CucumberPlant.cpp.s
-
 src/Greenhouse.obj: src/Greenhouse.cpp.obj
 
 .PHONY : src/Greenhouse.obj
@@ -286,9 +259,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Main
-	@echo ... src/CucumberPlant.obj
-	@echo ... src/CucumberPlant.i
-	@echo ... src/CucumberPlant.s
 	@echo ... src/Greenhouse.obj
 	@echo ... src/Greenhouse.i
 	@echo ... src/Greenhouse.s

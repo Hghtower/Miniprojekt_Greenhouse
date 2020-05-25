@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Main.dir/src/CucumberPlant.cpp.obj"
   "CMakeFiles/Main.dir/src/Greenhouse.cpp.obj"
   "CMakeFiles/Main.dir/src/Main.cpp.obj"
   "CMakeFiles/Main.dir/src/Plants.cpp.obj"
