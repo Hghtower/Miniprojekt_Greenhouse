@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/andre_000/Documents/VSC projects/Miniprojekt-Greenhouse/src/Greenhouse.cpp" "C:/Users/andre_000/Documents/VSC projects/Miniprojekt-Greenhouse/build/CMakeFiles/Main.dir/src/Greenhouse.cpp.obj"
   "C:/Users/andre_000/Documents/VSC projects/Miniprojekt-Greenhouse/src/Main.cpp" "C:/Users/andre_000/Documents/VSC projects/Miniprojekt-Greenhouse/build/CMakeFiles/Main.dir/src/Main.cpp.obj"
-  "C:/Users/andre_000/Documents/VSC projects/Miniprojekt-Greenhouse/src/Plants.cpp" "C:/Users/andre_000/Documents/VSC projects/Miniprojekt-Greenhouse/build/CMakeFiles/Main.dir/src/Plants.cpp.obj"
   "C:/Users/andre_000/Documents/VSC projects/Miniprojekt-Greenhouse/src/TomatoPlant.cpp" "C:/Users/andre_000/Documents/VSC projects/Miniprojekt-Greenhouse/build/CMakeFiles/Main.dir/src/TomatoPlant.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

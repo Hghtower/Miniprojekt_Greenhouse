@@ -196,33 +196,6 @@ src/Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
-src/Plants.obj: src/Plants.cpp.obj
-
-.PHONY : src/Plants.obj
-
-# target to build an object file
-src/Plants.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/Plants.cpp.obj
-.PHONY : src/Plants.cpp.obj
-
-src/Plants.i: src/Plants.cpp.i
-
-.PHONY : src/Plants.i
-
-# target to preprocess a source file
-src/Plants.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/Plants.cpp.i
-.PHONY : src/Plants.cpp.i
-
-src/Plants.s: src/Plants.cpp.s
-
-.PHONY : src/Plants.s
-
-# target to generate assembly for a file
-src/Plants.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/Plants.cpp.s
-.PHONY : src/Plants.cpp.s
-
 src/TomatoPlant.obj: src/TomatoPlant.cpp.obj
 
 .PHONY : src/TomatoPlant.obj
@@ -265,9 +238,6 @@ help:
 	@echo ... src/Main.obj
 	@echo ... src/Main.i
 	@echo ... src/Main.s
-	@echo ... src/Plants.obj
-	@echo ... src/Plants.i
-	@echo ... src/Plants.s
 	@echo ... src/TomatoPlant.obj
 	@echo ... src/TomatoPlant.i
 	@echo ... src/TomatoPlant.s

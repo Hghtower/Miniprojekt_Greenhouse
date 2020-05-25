@@ -7,12 +7,12 @@
 #include <time.h>
 #include <stdlib.h>
 
-int days = 0;
 Greenhouse Storage;
 std::vector<TomatoPlant> ThePlants;
 
 bool growFruit(std::vector<TomatoPlant> &ThePlants);
 void simulateTime(std::vector<TomatoPlant> &ThePlants);
+void setTomato(std::vector<TomatoPlant> &ThePlants);
 
 int main (int argc, char const *argv[]) {
     std::cout << "Greenhouse simulation starting..." << '\n';
@@ -30,10 +30,6 @@ int main (int argc, char const *argv[]) {
     TomatoPlant tomato2;
     TomatoPlant tomato3;
 
-    //Input number of days to simulate
-    std::cout << "Input number of days to simulate: " << '\n';
-    std::cin >> days;
-
     //Create plant objects
     ThePlants.push_back(tomato1);
     ThePlants.push_back(tomato2);
@@ -46,7 +42,11 @@ int main (int argc, char const *argv[]) {
 }
 
 void simulateTime(std::vector<TomatoPlant> &ThePlants ) {
+    int days = 0;
     int elapsed_days = 0;
+    //Input number of days to simulate
+    std::cout << "Input number of days to simulate: " << '\n';
+    std::cin >> days;
     for (int i = 0; i < days; i++) {
         std::cout << "Day " << i + 1 << " of " << days << '\n';
         elapsed_days++;

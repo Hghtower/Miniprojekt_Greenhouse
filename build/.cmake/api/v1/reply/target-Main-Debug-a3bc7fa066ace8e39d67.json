@@ -60,8 +60,7 @@
 			[
 				0,
 				1,
-				2,
-				3
+				2
 			]
 		}
 	],
@@ -100,8 +99,7 @@
 			[
 				0,
 				1,
-				2,
-				3
+				2
 			]
 		}
 	],
@@ -117,12 +115,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/Greenhouse.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/Plants.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
