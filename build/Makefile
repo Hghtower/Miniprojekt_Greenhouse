@@ -196,33 +196,6 @@ src/Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/Main.cpp.s
 .PHONY : src/Main.cpp.s
 
-src/TomatoPlant.obj: src/TomatoPlant.cpp.obj
-
-.PHONY : src/TomatoPlant.obj
-
-# target to build an object file
-src/TomatoPlant.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/TomatoPlant.cpp.obj
-.PHONY : src/TomatoPlant.cpp.obj
-
-src/TomatoPlant.i: src/TomatoPlant.cpp.i
-
-.PHONY : src/TomatoPlant.i
-
-# target to preprocess a source file
-src/TomatoPlant.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/TomatoPlant.cpp.i
-.PHONY : src/TomatoPlant.cpp.i
-
-src/TomatoPlant.s: src/TomatoPlant.cpp.s
-
-.PHONY : src/TomatoPlant.s
-
-# target to generate assembly for a file
-src/TomatoPlant.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/TomatoPlant.cpp.s
-.PHONY : src/TomatoPlant.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -238,9 +211,6 @@ help:
 	@echo ... src/Main.obj
 	@echo ... src/Main.i
 	@echo ... src/Main.s
-	@echo ... src/TomatoPlant.obj
-	@echo ... src/TomatoPlant.i
-	@echo ... src/TomatoPlant.s
 .PHONY : help
 
 
